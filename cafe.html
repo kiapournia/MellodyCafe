@@ -1,0 +1,1069 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ملودی</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/content.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <script src="js/products.js" defer></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid pad sticky">
+        <div id="header-nav">
+            <button type="button" class="btn" id="bag">
+                <i class="fa fa-shopping-cart" aria-hidden="true"><span style="font-size: 14px;">سبدخرید</span></i>
+            </button>
+            <div id="myModal1" class="modal1" style="display: none;">
+                <div class="basket">
+                    <div class="basketname">
+                        <p id="yourbasket">سبد خرید شما</p>
+                        <p id="priceBasket"></p>
+                        <button class="btn" type="button" id="bastan"><span class="close">بستن&nbsp;<i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    </div>
+                    <hr class="basketline">
+                    <div class="delete">
+                        <p id="deleteall">حذف تمامی موارد &nbsp;&nbsp; <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></p>
+                    </div>
+                    <div class="listbasket">
+
+                    </div>
+                </div>
+            </div>
+            <div id="border-nav" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#border-nav" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#border-nav" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#border-nav" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a class="box box-margin" data-filter="hotdrink" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/coffee-cup1.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>نوشیدنی گرم | Hot Drink</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="instant" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/instant-coffee.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>قهوه دمی | Instant Coffee</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="ColdCoffee" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/iced-coffee.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>قهوه سرد | Cold Coffee</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="box box-margin" data-filter="ColdDrink" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/drink.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>نوشیدنی سرد | Cold Drink</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="shake" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/milk-shake.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>شیک | shake</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="Herbal" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/herbal-tea.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>انواع دمنوش | Herbal Tea</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="box box-margin" data-filter="cake" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/cake.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>کیک | Cake</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="snack" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/sandwich.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>میان وعده | Snack</p>
+                            </div>
+                        </a>
+                        <a class="box box-margin" data-filter="Products" data-type="category">
+                            <div class="box-img">
+                                <img src="images/icon/new-product.png" class="img-fluid">
+                            </div>
+                            <div class="box-txt">
+                                <p>محصولات | Products</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#border-nav" data-bs-slide="next">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#border-nav" data-bs-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="hotdrink">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">نوشیدنی گرم | Hot Drink</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct hotdrink">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/espresodabel.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسپرسو دبل | Espresso Dubble</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="1" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct hotdrink">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/espresosingle.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسپرسو سینگل | Espresso Dubble</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">34000 تومان</p>
+                                    <button id="2" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct hotdrink">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/caramelmakiyato.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کارامل ماکیاتو | Caramel Macchiato</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="3" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/americano.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آمریکانو | Americano</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">44000 تومان</p>
+                                    <button id="4" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/cappuchino.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کاپوچینو | Cappuccino</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="5" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/latte.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">لته | Latte</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="6" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instant">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">قهوه دمی | Instant coffee</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct instant">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/v60.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">v60</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">54000 تومان</p>
+                                    <button id="23" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct instant">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/iropress.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">ایروپرس</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">44000 تومان</p>
+                                    <button id="24" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/sayphone.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">سایفون</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="25" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/french2.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">فرانسه</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">44000 تومان</p>
+                                    <button id="26" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cold" class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/comex.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کِمکس</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">54000 تومان</p>
+                                    <button id="27" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ColdCoffee">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">قهوه سرد | Ice coffee</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/ice-americano.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آیس آمریکانو | Iced Americano</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="28" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/icemoka.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آیس موکا | Iced Mocha</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="29" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/icelatte.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آیس لته | Iced Latte</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">54000 تومان</p>
+                                    <button id="30" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/afogato1.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آفوگاتو | Affogato</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="31" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/ferape.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آیس کارامل ماکیاتو</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="32" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/coldbro.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کلد برو</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="33" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ColdDrink">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">نوشیدنی سرد | Cold Drink</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/coctelekivi.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کوکتل کیوی پرتقال</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="38" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/syrup.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شربت Syrup</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">35000 تومان</p>
+                                    <button id="39" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/behlimoobahar.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شربت به لیمو بهار نارنج</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="40" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/sekanjebin.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شربت سکنجبین</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="41" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/bubblegum.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کوکتل آدامس</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="42" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/coctelorange.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کوکتل اورنج اسپرسو</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">54000 تومان</p>
+                                    <button id="43" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shake">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">شیک | shake</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/shakenutella.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شیک نوتلا | shake Nutella</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="51" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/shakevanilcaramel.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شیک وانیل + کارامل</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="52" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/shaketoot.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شیک توت فرنگی | shake Strawberry</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="53" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/shakecafe.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">شیک اسپرسو | shake Espresso</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">64000 تومان</p>
+                                    <button id="54" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Herbal">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">انواع دمنوش | Herbal Tea</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/avishan.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آویشن | بزرگ</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="64" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/avishan.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">آویشن | کوچک</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="65" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/baboone.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">بابونه | بزرگ</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="66" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/baboone.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">بابونه | کوچک</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="67" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/behlimoo.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">به لیمو بهار نارنج | بزرگ</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="68" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/behlimoo.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">به لیمو بهار نارنج | کوچک</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="69" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cake">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">کیک | Cake</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/choclatecake.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کیک شکلات | Chocolate cake</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">49000 تومان</p>
+                                    <button id="82" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/daycake.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">کیک روز | Day cake</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">39000 تومان</p>
+                                    <button id="83" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/cheeseecakeday.jpg" class="b1"></span>
+                            </div>
+                            <div id="between" class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">چیز کیک | cheesee cake</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">54000 تومان</p>
+                                    <button id="84" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="snack">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">میان وعده  | Snack</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/chickensnack.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسنک مرغ | shakeken Snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="85" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/snack.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسنک گوشت | Meat Snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="86" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/chickensnack.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسنک سوجوک | Sojuk snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="87" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/snack.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسنک سالامی | Salami snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="88" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/cheesee.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">چیپس و پنیر بزرگ | shakeken Snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">99000 تومان</p>
+                                    <button id="89" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/cheesee.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">چیپس و پنیر کوچک | shakeken Snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">69000 تومان</p>
+                                    <button id="90" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/pitza.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">پیتزا | pizza</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">119000 تومان</p>
+                                    <button id="91" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/snack.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">اسنک پپرونی | Pepperoni snack</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">59000 تومان</p>
+                                    <button id="92" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Products">
+            <div class="subject">
+                <span class="line"></span>
+                <span class="name">
+                    <p class="name-product">محصولات  | Products</p>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 rightbox divider">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/ghahveajorigeranaroma.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">قهوه آجری گران آروما</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">0 تومان</p>
+                                    <button id="93" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 leftbox">
+                    <div class="box0fproduct">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <span><img src="images/ghahveajorianticabotegarabica.jpg" class="b1"></span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="b2"><p class="nameofpro">قهوه آجری آنتیبوتیکا عربیکا</p></span>
+                                <div class="b3">
+                                    <p class="priceofpro">0 تومان</p>
+                                    <button id="94" onclick="orderlist(this)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" onclick="">سفارش</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <img id="ModualPic" src="" />
+                    </div>
+                    <div class="modal-body">
+                        <p class="nameofpro" id="namepro"></p>
+                        <p class="priceofpro" id="pricepro" style="color:black;margin-top:20px;"></p>
+                        <p id="explain"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal" id="submit">تایید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var sticky = $('.sticky'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 50) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
+    </script>
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("bag");
+
+        // Get the <span> element that closes the modal
+        var div = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal1.style.display = "block";
+            modal1.style.webkittransition = 'translateX(35%) 2s ease-in-out';
+            modal1.style.MozTransform = 'translateX(35%) 2s ease-in-out';
+            modal1.style.msTransform = 'translateX(35%) 2s ease-in-out';
+            modal1.style.OTransform = 'translateX(35%) 2s ease-in-out';
+            modal1.style.transform = 'translateX(35%) 2s ease-in-out';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        div.onclick = function () {
+            modal1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
